@@ -16,7 +16,7 @@ public:
 };
 Node *buildTree(Node *root)
 {
-    cout << "Enter the data for node" << endl;
+    cout << "Enter the data for node";
     int data;
     cin >> data;
     root = new Node(data);

@@ -98,6 +98,15 @@ void postorder(node *root)
     cout<<root->data<<" ";
     
 }
+int height(node *root)
+{
+    if(root==NULL)
+     return 0;
+    int left=height(root->left);
+    int right=height(root->right);
+    int ans=max(left,right)+1;
+    return ans;
+}
 int main()
 {
     //1 3 7 -1 -1 11 -1 -1 5 17 -1 -1 -1
@@ -111,5 +120,6 @@ int main()
     preorder(root);
     cout<<endl;
     postorder(root);
-
+   cout<<endl;
+   cout<<height(root)<<endl;
 }

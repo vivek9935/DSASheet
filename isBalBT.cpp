@@ -41,7 +41,7 @@ int main() {
     // Create a sample binary tree
     TreeNode<int>* root = new TreeNode<int>(1);
     root->left = new TreeNode<int>(2);
-    root->right = new TreeNode<int>(3);
+    //root->right = new TreeNode<int>(3);
     root->left->left = new TreeNode<int>(4);
     root->left->right = new TreeNode<int>(5);
    
